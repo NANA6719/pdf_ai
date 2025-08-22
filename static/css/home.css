@@ -1,0 +1,135 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 폰트 스타일 */
+body {
+  font-family: '맑은 고딕', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* 상단 로고 영역 */
+.top-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.school-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 네비게이션 바 */
+.nav-bar {
+  display: inline;
+  justify-content: space-around;
+  background-color:  #007bff;;
+  padding: 15px 40px;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* 메인 콘텐츠 */
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  min-height: 70vh;
+}
+
+/* 왼쪽 섹션 */
+.left-section {
+  text-align: center;
+  margin-right: 80px;
+}
+
+.left-section h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.chacha-img {
+  width: 350px;
+}
+
+/* 오른쪽 로그인 박스 */
+.right-section .login-box {
+  background-color: #e2e2e2b6;
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 450px;
+}
+
+.login-box h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color:  #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.options {
+  font-size: 14px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sub-links {
+  margin-top: 8px;
+}
+
+.sub-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+#logo_text{
+    color: #100157;
+    font-family:sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}

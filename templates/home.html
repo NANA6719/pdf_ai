@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>충남대학교 로그인</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+  <!-- 상단 로고 영역 -->
+  <header class="top-header">
+    <img src="static/img/logo.png" alt="충남대학교 로고" class="logo-img" />
+    <span id="logo_text">CHAT-CHACHA</sapn>
+  </header>
+
+  <!-- 하단 메뉴 네비게이션 바 -->
+  <nav class="nav-bar">
+    <a href="https://dcs-lcms.cnu.ac.kr/login?redirectUrl=https://dcs-lcms.cnu.ac.kr/" target="_blank">사이버캠퍼스</a>
+    <a href="https://library.cnu.ac.kr/" target="_blank">도서관</a>
+    <a href="https://portal.cnu.ac.kr/login.jsp" target="_blank">포털</a>
+    <a href="https://plus.cnu.ac.kr/html/kr/"  target="_blank">CNU</a>
+  </nav>
+
+  <!-- 메인 본문 -->
+  <main class="main-container">
+    <!-- 왼쪽 영역 -->
+    <section class="left-section">
+      <h2>Let’s Chat</h2>
+      <img src="static\img\chacha.png" alt="캐릭터 이미지" class="chacha-img" />
+    </section>
+
+    <!-- 오른쪽 로그인 영역 -->
+    <section class="right-section">
+      <div class="login-box">
+        <h3>로그인</h3>
+        <form id="login_form" action="/" method="POST">
+          <input type="text" name="username" placeholder="id: 학번/교직원번호" required />
+          <input type="password" name="password"  placeholder="비밀번호" required />
+          <button type="submit">로그인</button>
+          <div class="options">
+            <label><input type="checkbox" /> ID 저장</label>
+            <div class="sub-links">
+              <a href="#">아이디 찾기</a> / <a href="#">비밀번호 변경</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</body>
+</html>
+

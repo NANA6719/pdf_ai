@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>충남대학교 AI 서비스</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>개인 학습 맞춤 AI - Chat 차차</h1>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="container">
+        <div class="sidebar">
+             <!-- 논문 기반 검색 토글 -->
+            <button id="searchThesisBtn">논문기반 검색하기 ON/OFF</button>
+            <button id="newChatBtn">새 채팅 만들기</button>
+            <input type="text" id="searchChat" placeholder="채팅 검색">
+            <div id="chatList">
+                <!-- 기존 채팅 목록 표시 -->
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div id="chatWindow">
+                <!-- 채팅 메시지 표시 영역 -->
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="question" placeholder="질문을 입력하세요">
+                <button id="askBtn">질문</button>
+                <input type="file" id="pdfFile">
+                <button id="uploadBtn">PDF 업로드</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

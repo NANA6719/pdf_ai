@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+venv/
+.env
+
+data/
+uploads/
+chroma_store/
+
+.DS_Store
+Thumbs.db
+
+*.key
+*.pem
